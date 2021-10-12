@@ -1,0 +1,26 @@
+{
+  "name": "tdd-exercicio",
+  "version": "1.0.0",
+  "description": "Atividade 3 - TDD (Tópicos em Computação)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jm-marcel/tdd-exercicio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jm-marcel/tdd-exercicio/issues"
+  },
+  "homepage": "https://github.com/jm-marcel/tdd-exercicio#readme",
+  "dependencies": {
+    "jest": "^27.2.5"
+  }
+}
