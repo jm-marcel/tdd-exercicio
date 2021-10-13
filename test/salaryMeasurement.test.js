@@ -2,13 +2,11 @@ const employee = require("../lib/employee");
 const measurement = require("../lib/salaryMeasurement");
 
 describe("Calcular Salário", () => {
-  // Developer - Success
-  test("Desenvolvedor", () => {
-    result = measurement(
-      new employee("Pedro", "pedro@email.com", 5000, "Desenvolvedor")
-    );
-    expect(result.salary).toBe(4000);
-    expect(result.discount).toBe(1000);
-    expect(result.fee).toBe(0.2);
+  // DBA (Same as Tester :D) - Failure
+  test("DBA", () => {
+    result = measurement(new employee("Zyon", "zyon@email.com", 550, "DBA"));
+    expect(result.salary).toBeCloseTo(487.5);
+    expect(result.discount).toBeCloseTo(44.5);
+    expect(result.fee).toBe(0.5);
   });
 });
